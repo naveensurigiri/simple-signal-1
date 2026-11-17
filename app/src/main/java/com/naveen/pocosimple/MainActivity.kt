@@ -267,7 +267,7 @@ private fun QuickControlsCard(context: Context) {
         Text("Quick controls", color = White, fontSize = 18.sp, fontWeight = FontWeight.SemiBold)
         Spacer(Modifier.height(8.dp))
         QuickControlRow("Wi-Fi", wifiOn) { openSettings(context, Settings.Panel.ACTION_WIFI) }
-        QuickControlRow("Mobile data", mobileOn) { openSettings(context, Settings.Panel.ACTION_MOBILE_DATA) }
+        QuickControlRow("Mobile data", mobileOn) { openSettings(context, Settings.Panel.ACTION_INTERNET_CONNECTIVITY) }
         QuickControlRow("Location", locationOn) { openSettings(context, Settings.ACTION_LOCATION_SOURCE_SETTINGS) }
         QuickControlRow("Airplane mode", airplaneOn) { openSettings(context, Settings.ACTION_AIRPLANE_MODE_SETTINGS) }
         Text("Tap a row to open Android settings. System restrictions prevent ordinary apps from changing these switches directly.",
